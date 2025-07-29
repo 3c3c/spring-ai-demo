@@ -1,0 +1,9 @@
+# In application.yml
+spring:
+  ai:
+    deepseek:
+      api-key:
+      chat:
+        options:
+          model: deepseek-chat
+          temperature: 0.8
