@@ -1,0 +1,7 @@
+# In application.yml
+spring:
+  ai:
+    openai:
+      api-key: sk-mnopqrstijkl5678mnopqrstijkl5678mnopqrst
+server:
+  port: 8081

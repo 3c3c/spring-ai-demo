@@ -1,5 +1,6 @@
 package org.example.controller;
 
+import org.springframework.ai.chat.memory.ChatMemory;
 import org.springframework.ai.chat.messages.AssistantMessage;
 import org.springframework.ai.chat.messages.Message;
 import org.springframework.ai.chat.messages.UserMessage;
@@ -25,6 +26,9 @@ import java.util.Objects;
 public class ChatController {
 
     private final DeepSeekChatModel chatModel;
+
+    @Autowired
+    ChatMemory chatMemory;
 
     @Autowired
     public ChatController(DeepSeekChatModel chatModel) {
